@@ -1,62 +1,81 @@
-<section class="hero-pabs">
-  <div class="hero-overlay"></div>
-  <div class="hero-container">
-    
-    <!-- Contenido Principal -->
-    <div class="hero-content">
-      <span class="badge-trust">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Programa de Apoyo de Beneficio Social
-      </span>
-      
-      <h1 class="hero-title">
-        Protección y tranquilidad para lo que más amas, <span class="highlight">hoy y siempre</span>
-      </h1>
-      
-      <p class="hero-description">
-        Acompañamos a las familias mexicanas con planes integrales de previsión a futuro. Garantiza el respaldo institucional, económico y humano que tu familia merece en todo momento.
-      </p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PABS - Programa de Apoyo de Beneficio Social</title>
+  <!-- Conectamos con el archivo de colores y diseño -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
 
-      <!-- Botones de Acción (CTA) -->
-      <div class="hero-actions">
-        <a href="#planes" class="btn-primary">
-          Conocer Planes de Previsión
-        </a>
-        <a href="https://wa.me/5216640000000?text=Hola,%20deseo%20recibir%20informaci%C3%B3n%20sobre%20los%20planes%20PABS" class="btn-secondary" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.2-1.2l-.3-.2-3.1 1 1-3-.2-.3A8 8 0 1 1 12 20zm4.5-6c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.6-3.2c-.2-.4 0-.6.1-.7l.5-.6c.1-.2.2-.3.1-.5s-.6-1.5-.8-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.3 1.4 3.5 2.4 3.7 5.8 5.1c.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.7-.1 2.1-.8 2.4-1.7.3-.8.3-1.6.2-1.7s-.3-.2-.5-.3z"/></svg>
-          Asesoría Inmediata
-        </a>
-      </div>
-
-      <!-- Métricas de Confianza / Proof Points -->
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-number">+100k</span>
-          <span class="stat-label">Familias Protegidas</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">24/7</span>
-          <span class="stat-label">Atención Inmediata</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Transferible y Heredable</span>
-        </div>
-      </div>
+  <!-- 1. LA BARRA DE ARRIBA (HEADER CON LOGO) -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo">
+        <img src="assets/images/logo-pabs.webp" alt="Logo PABS" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="#planes">Planes</a>
+        <a href="#cobertura">Cobertura</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Imagen o Ilustración Principal -->
-    <div class="hero-visual">
-      <div class="visual-card">
-        <img src="assets/images/logo-pabs.webp" alt="Logo Oficial PABS" class="hero-logo-badge" />
-        <div class="card-caption">
-          <h3>Respaldo Institucional Garantizado</h3>
+  <!-- 2. EL CARTEL GIGANTE DE BIENVENIDA (HERO) -->
+  <section class="hero-pabs">
+    <div class="hero-container">
+      
+      <!-- Lado Izquierdo: Texto y Botones -->
+      <div class="hero-content">
+        <span class="badge-trust">🛡️ Programa de Apoyo de Beneficio Social</span>
+        
+        <h1 class="hero-title">
+          Protección y tranquilidad para lo que más amas, <span class="highlight">hoy y siempre</span>
+        </h1>
+        
+        <p class="hero-description">
+          Acompañamos a las familias mexicanas con planes integrales de previsión a futuro. Garantiza el respaldo institucional, económico y humano que tu familia merece.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#planes" class="btn-primary">Conocer Planes</a>
+          <a href="https://wa.me/5216640000000?text=Hola,%20deseo%20informaci%C3%B3n" class="btn-whatsapp" target="_blank">
+            💬 Asesoría por WhatsApp
+          </a>
+        </div>
+
+        <!-- Datos de confianza -->
+        <div class="hero-stats">
+          <div>
+            <strong>+100k</strong>
+            <p>Familias Protegidas</p>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <strong>24/7</strong>
+            <p>Atención Inmediata</p>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <strong>100%</strong>
+            <p>Transferible</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lado Derecho: Tarjeta con el Logo -->
+      <div class="hero-visual">
+        <div class="visual-card">
+          <img src="assets/images/logo-pabs.webp" alt="Logo PABS" class="card-logo">
+          <h3>Respaldo Institucional</h3>
           <p>Planes diseñados para adaptarse a la economía de cada hogar.</p>
         </div>
       </div>
-    </div>
 
-  </div>
-</section>
+    </div>
+  </section>
+
+</body>
+</html>
