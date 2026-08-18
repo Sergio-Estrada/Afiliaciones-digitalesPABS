@@ -1,182 +1,162 @@
-:root {
-  --pabs-blue-primary: #0a2540;
-  --pabs-blue-brand: #0038a8;
-  --pabs-blue-light: #eef4ff;
-  --pabs-gold-accent: #d97706;
-  --pabs-text-dark: #1e293b;
-  --pabs-text-muted: #475569;
+/* Configuración básica de letras y márgenes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
+/* --- 1. ESTILOS DE LA BARRA DE ARRIBA (HEADER) --- */
+.site-header {
+  background-color: #ffffff;
+  padding: 12px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 140px;
+  height: auto;
+}
+
+.main-nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #0a2540;
+  font-weight: bold;
+}
+
+/* --- 2. ESTILOS DEL CARTEL PRINCIPAL (HERO) --- */
 .hero-pabs {
-  position: relative;
-  background: linear-gradient(135deg, #ffffff 0%, #f4f7fc 100%);
-  padding: 80px 24px 60px;
-  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4f9 100%);
+  padding: 60px 24px;
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 48px;
+  display: flex;
+  gap: 40px;
   align-items: center;
+  flex-wrap: wrap; /* Para que en celular se ponga uno abajo de otro */
 }
 
-/* Badge Superior */
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
 .badge-trust {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: var(--pabs-blue-light);
-  color: var(--pabs-blue-brand);
-  font-weight: 600;
-  font-size: 0.875rem;
-  padding: 6px 14px;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  background-color: #eef4ff;
+  color: #0038a8;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
 }
 
-/* Título y Texto */
 .hero-title {
-  font-size: 2.75rem;
-  line-height: 1.2;
-  color: var(--pabs-blue-primary);
-  font-weight: 800;
-  margin-bottom: 20px;
+  font-size: 2.2rem;
+  color: #0a2540;
+  margin: 16px 0;
 }
 
-.hero-title .highlight {
-  color: var(--pabs-blue-brand);
+.highlight {
+  color: #0038a8;
 }
 
 .hero-description {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: var(--pabs-text-muted);
-  margin-bottom: 32px;
-  max-width: 580px;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 24px;
 }
 
 /* Botones */
 .hero-actions {
   display: flex;
-  gap: 16px;
-  margin-bottom: 48px;
-  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
 }
 
 .btn-primary {
-  background-color: var(--pabs-blue-brand);
-  color: #ffffff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 700;
+  background-color: #0038a8;
+  color: white;
+  padding: 12px 20px;
   text-decoration: none;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 14px rgba(0, 56, 168, 0.3);
+  border-radius: 6px;
+  font-weight: bold;
 }
 
-.btn-primary:hover {
-  background-color: #002b80;
-  transform: translateY(-2px);
-}
-
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+.btn-whatsapp {
   background-color: #25d366;
-  color: #ffffff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 700;
+  color: white;
+  padding: 12px 20px;
   text-decoration: none;
-  transition: all 0.2s ease;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
-.btn-secondary:hover {
-  background-color: #1eb857;
-  transform: translateY(-2px);
-}
-
-/* Estadísticas de Confianza */
+/* Datos de confianza abajo */
 .hero-stats {
   display: flex;
-  align-items: center;
-  gap: 24px;
-  border-top: 1px solid #e2e8f0;
-  padding-top: 24px;
+  gap: 20px;
+  border-top: 1px solid #dddddd;
+  padding-top: 20px;
 }
 
-.stat-number {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--pabs-blue-primary);
+.hero-stats strong {
+  font-size: 1.2rem;
+  color: #0a2540;
 }
 
-.stat-label {
-  font-size: 0.85rem;
-  color: var(--pabs-text-muted);
+.hero-stats p {
+  font-size: 0.8rem;
+  color: #777777;
 }
 
-.stat-divider {
+.divider {
   width: 1px;
-  height: 36px;
-  background-color: #cbd5e1;
+  background-color: #ccc;
 }
 
-/* Tarjeta Visual Derecha */
+/* Tarjeta derecha */
 .hero-visual {
+  flex: 0.8;
   display: flex;
   justify-content: center;
+  min-width: 280px;
 }
 
 .visual-card {
-  background: #ffffff;
-  padding: 32px;
-  border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(10, 37, 64, 0.08);
-  border: 1px solid #edf2f7;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   text-align: center;
-  max-width: 360px;
 }
 
-.hero-logo-badge {
-  max-width: 180px;
-  height: auto;
-  margin-bottom: 20px;
+.card-logo {
+  max-width: 150px;
+  margin-bottom: 12px;
 }
 
-.card-caption h3 {
-  font-size: 1.15rem;
-  color: var(--pabs-blue-primary);
-  margin-bottom: 8px;
+.visual-card h3 {
+  color: #0a2540;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
 }
 
-.card-caption p {
-  font-size: 0.9rem;
-  color: var(--pabs-text-muted);
-}
-
-/* Responsividad para Móviles */
-@media (max-width: 992px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .hero-description {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-actions {
-    justify-content: center;
-  }
-
-  .hero-stats {
-    justify-content: center;
-  }
+.visual-card p {
+  color: #666;
+  font-size: 0.85rem;
 }
