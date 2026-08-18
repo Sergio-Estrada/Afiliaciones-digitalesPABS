@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Solicitud de Contrato de Previsión PABS</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 12mm 15mm;
+            @bottom-right {
+                content: "Página " counter(page);
+                font-family: Arial, sans-serif;
+                font-size: 8pt;
+                color: #666;
+            }
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 8.5pt;
+            line-height: 1.25;
+            color: #111;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 8px;
+        }
+
+        .header-table td {
+            vertical-align: top;
+        }
+
+        .logo-box {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #0F2C59;
+        }
+
+        .company-title {
+            font-size: 13pt;
+            font-weight: 800;
+            text-align: center;
+            color: #0F2C59;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .company-sub {
+            text-align: center;
+            font-size: 8pt;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .folio-box {
+            border: 2px solid #DC2626;
+            color: #DC2626;
+            padding: 5px 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 11pt;
+            border-radius: 4px;
+        }
+
+        .doc-title {
+            text-align: center;
+            font-size: 11pt;
+            font-weight: bold;
+            background-color: #0F2C59;
+            color: white;
+            padding: 4px;
+            margin: 8px 0 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .declarations {
+            margin-bottom: 8px;
+            text-align: justify;
+            font-size: 8pt;
+        }
+
+        .declarations h4 {
+            font-size: 8.5pt;
+            margin: 4px 0 2px 0;
+            color: #0F2C59;
+            text-transform: uppercase;
+        }
+
+        .clauses {
+            margin-bottom: 10px;
+        }
+
+        .clause-item {
+            margin-bottom: 5px;
+            text-align: justify;
+            font-size: 7.8pt;
+        }
+
+        .clause-title {
+            font-weight: bold;
+            color: #0F2C59;
+        }
+
+        .fill-data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        .fill-data-table td, .fill-data-table th {
+            border: 1px solid #999;
+            padding: 5px 8px;
+            font-size: 8pt;
+        }
+
+        .fill-data-table th {
+            background-color: #F1F5F9;
+            color: #0F2C59;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .receipt-stub {
+            margin-top: 15px;
+            border-top: 2px dashed #666;
+            padding-top: 10px;
+        }
+
+        .receipt-stub-header {
+            display: table;
+            width: 100%;
+            margin-bottom: 6px;
+        }
+
+        .receipt-stub-cell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .signatures {
+            margin-top: 25px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .signatures td {
+            width: 50%;
+            text-align: center;
+            vertical-align: bottom;
+            padding-top: 30px;
+            font-size: 8pt;
+        }
+
+        .sig-line {
+            border-top: 1px solid #333;
+            width: 80%;
+            margin: 0 auto 4px auto;
+        }
+
+        .highlight-badge {
+            background-color: #FEF3C7;
+            border: 1px solid #F59E0B;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #92400E;
+            font-size: 8pt;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="header-table">
+        <tr>
+            <td style="width: 25%;">
+                <div class="logo-box">
+                    PABS ®<br>
+                    <span style="font-size: 7pt; font-weight: normal;">BENEFICIO SOCIAL</span>
+                </div>
+            </td>
+            <td style="width: 50%;">
+                <div class="company-title">Programa de Apoyo de Beneficio Social</div>
+                <div class="company-sub">TECATE, BAJA CALIFORNIA</div>
+                <div class="company-sub" style="font-size: 7.5pt; font-weight: normal;">RFC: SPR241031EG6 | SERVIFUT DE PREVENCION S.A. DE C.V.</div>
+                <div class="company-sub" style="font-size: 7pt; font-weight: normal;">Calle 13 N° 1 Int. 4, Col. Espinoza, C.P. 21410, Tecate B.C. | Tels. 665 655 7823 y 665 654 5457 (24Hrs.)</div>
+            </td>
+            <td style="width: 25%; text-align: right;">
+                <div class="folio-box">
+                    EFO01<br>
+                    FOLIO: 3427
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="doc-title">SOLICITUD DE CONTRATO DE PREVISIÓN FUNERARIA</div>
+
+    <div class="declarations">
+        En la ciudad de Tecate, B.C. a los 18 días del mes de Agosto del 2026, comparecen por una parte <strong>SERVIFUT DE PREVENCION S.A. DE C.V.</strong>, con domicilio en Calle 13 N° 1 Int. 4, Col. Espinoza, C.P. 21410 Tecate B.C. y por la otra el/la C. <strong>SERGIO ESTRADA CANALES</strong>, en su calidad de titular - cliente, manifiestan ambas partes su conformidad para celebrar un contrato de prestación de servicios funerarios bajo las siguientes declaraciones y cláusulas:
+    </div>
+
+    <table class="fill-data-table">
+        <tr>
+            <th style="width: 20%;">Titular Afiliado:</th>
+            <td style="width: 45%;">Sergio Estrada Canales</td>
+            <th style="width: 15%;">Estado Civil:</th>
+            <td style="width: 20%;">Casado/a</td>
+        </tr>
+        <tr>
+            <th>Fecha Nacimiento / CURP:</th>
+            <td>15/05/1988 | EACS880515HBCRR09</td>
+            <th>Lugar Nacimiento:</th>
+            <td>Baja California</td>
+        </tr>
+        <tr>
+            <th>Beneficiario Designado:</th>
+            <td colspan="3">María Elena Canales (Cláusula Décima Segunda)</td>
+        </tr>
+        <tr>
+            <th>Dirección de Cobro:</th>
+            <td colspan="3">Av. Revolución N° 1234, Col. Centro, Tecate, Baja California</td>
+        </tr>
+        <tr>
+            <th>Plan Seleccionado:</th>
+            <td><strong>PLAN IMPERIAL ($28,900 MXN)</strong></td>
+            <th>Plan Alterno:</th>
+            <td>Plan Premium ($32,900 MXN)</td>
+        </tr>
+    </table>
+
+    <div class="declarations">
+        <h4>DECLARACIONES:</h4>
+        <strong>DECLARA LA EMPRESA:</strong> Ser una persona moral, que su actividad económica es la de proveer servicios funerarios a previsión de gran calidad al alcance de todos y que la persona que firme el presente contrato en su representación tiene la facultad legal suficiente para hacerlo.<br>
+        <strong>DECLARA EL CLIENTE:</strong> Ser mayor de edad y que es su voluntad contratar de la empresa, los servicios funerarios a previsión descritos en las siguientes cláusulas.
+    </div>
+
+    <div class="clauses">
+        <div class="clause-item">
+            <span class="clause-title">PRIMERA.- PLANES FUNERARIOS, ADQUISICIÓN DEL PLAN.-</span> A través de la firma del presente contrato, el "Titular" acepta estar adquiriendo el <strong>PLAN IMPERIAL con costo de $28,900 MXN</strong> (o PLAN PREMIUM con costo de $32,900 MXN) con el que cuenta la empresa.
+        </div>
+        <div class="clause-item">
+            <span class="clause-title">SEGUNDA.- DERECHOS DEL CONTRATO.-</span> De conformidad al plan contratado, el CLIENTE es la única persona que se reconoce como "Titular" del contrato y quien recibe todos los beneficios aquí mencionados.
+        </div>
+        <div class="clause-item">
+            <span class="clause-title">TERCERA.- COSTO TOTAL Y APORTACIONES.-</span> El valor total de este contrato es de <strong>$28,900 pesos</strong> que acepta cubrir con un pago inicial de <strong>$200 pesos</strong> y pagos programados de <strong>$150 semanales / $300 quincenales / $600 mensuales</strong> a cubrir de manera periódica sin cargo de intereses en nuestras oficinas o cobradores autorizados.
+        </div>
+        <div class="clause-item">
+            <span class="clause-title">CUARTA.- SEGURO POR MUERTE ACCIDENTAL INSTANTÁNEA.-</span> La EMPRESA se compromete a otorgar un seguro por muerte accidental instantánea, para el caso de que el "Titular" falleciera accidentalmente y de manera instantánea en el evento; comprometiéndose la EMPRESA a prestar el servicio aquí contratado quedando automáticamente liquidado el saldo correspondiente al costo del Plan utilizado.
+        </div>
+        <div class="clause-item">
+            <span class="clause-title">QUINTA.- PAGO AL MOMENTO DE REQUERIR UN SERVICIO.-</span> Si el servicio contenido en este contrato fuera requerido antes de haber sido cubierto su importe totalmente, el SOLICITANTE está conforme que para poder hacer uso del mismo, deberá CUBRIR o SALDAR el costo total del servicio solicitado.
+        </div>
+        <div class="clause-item">
+            <span class="clause-title">DÉCIMA SEGUNDA.- DESIGNACIÓN DE BENEFICIARIO.-</span> Para los efectos de devolución de lo aportado a que se hace mención en la CLÁUSULA CUARTA de este contrato, el "Titular" designa como su beneficiario a la siguiente persona: <strong>María Elena Canales</strong>.
+        </div>
+    </div>
+
+    <table class="signatures">
+        <tr>
+            <td>
+                <div class="sig-line"></div>
+                <strong>EL TITULAR / CLIENTE</strong><br>
+                Sergio Estrada Canales
+            </td>
+            <td>
+                <div class="sig-line"></div>
+                <strong>POR LA EMPRESA</strong><br>
+                SERVIFUT DE PREVENCION S.A. DE C.V.
+            </td>
+        </tr>
+    </table>
+
+    <!-- RECEIPT STUB BELOW -->
+    <div class="receipt-stub">
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="width: 60%;">
+                    <strong style="font-size: 10pt; color: #0F2C59;">PROGRAMA DE APOYO DE BENEFICIO SOCIAL®</strong><br>
+                    <span style="font-size: 7.5pt;">SERVIFUT DE PREVENCION S.A. DE C.V. - RFC: SPR241031EG6</span>
+                </td>
+                <td style="width: 40%; text-align: right;">
+                    <span style="font-size: 9pt; font-weight: bold; color: #DC2626;">COMPROBANTE DE INVERSIÓN INICIAL</span><br>
+                    <span style="font-size: 8pt; font-weight: bold;">FOLIO: EFO01 - 3427</span>
+                </td>
+            </tr>
+        </table>
+
+        <table class="fill-data-table" style="margin-top: 6px;">
+            <tr>
+                <th style="width: 20%;">Recibí de:</th>
+                <td style="width: 50%;">Sergio Estrada Canales</td>
+                <th style="width: 15%;">Por $</th>
+                <td style="width: 15%;"><strong>$200.00 MXN</strong></td>
+            </tr>
+            <tr>
+                <th>Cantidad con Letra:</th>
+                <td colspan="3">DOSCIENTOS PESOS 00/100 M.N.</td>
+            </tr>
+            <tr>
+                <th>Concepto:</th>
+                <td colspan="3">Aportación Inicial de Inscripción a Plan Previsional PABS (Plan Imperial)</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
+contrato_comprobante_pabs.html
+Mostrando contrato_comprobante_pabs.html.
