@@ -1,383 +1,219 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>
-        PABS | Afiliación y Protección Familiar
-    </title>
+    <title>PABS | Afiliación y Protección Familiar</title>
 
     <meta
         name="description"
-        content="Conoce PABS, recibe orientación y comienza tu proceso de afiliación.">
+        content="Inicia tu proceso de afiliación PABS con orientación personalizada."
+    >
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
-
 <body>
-
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header class="header">
 
     <div class="brand">
-
-        <div class="brand-logo">
-            PABS
-        </div>
+        <div class="brand-logo">PABS</div>
 
         <div class="brand-text">
             Programa de Apoyo de Beneficio Social
         </div>
-
     </div>
 
-
     <nav class="navigation">
-
-        <a href="#inicio">
-            Inicio
-        </a>
-
-        <a href="#beneficios">
-            Beneficios
-        </a>
-
-        <a href="#como-funciona">
-            ¿Cómo funciona?
-        </a>
-
-        <a href="#preguntas">
-            Preguntas
-        </a>
-
+        <a href="#inicio">Inicio</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#como-funciona">¿Cómo funciona?</a>
+        <a href="#preguntas">Preguntas</a>
     </nav>
 
-
-    <button
-        class="header-button"
-        onclick="openAssistant()">
-
+    <button class="header-button" onclick="startAffiliation()">
         AFÍLIATE
-
     </button>
 
 </header>
 
 
-
-<!-- =========================
-     HERO
-========================= -->
-
-<section
-    id="inicio"
-    class="hero">
-
+<section id="inicio" class="hero">
 
     <div class="hero-overlay"></div>
 
-
     <div class="hero-content">
-
 
         <span class="hero-label">
             PROTECCIÓN Y PREVISIÓN
         </span>
 
-
         <h1>
-
             Tu tranquilidad
             <br>
-
-            <strong>
-                comienza hoy.
-            </strong>
-
+            <strong>comienza hoy.</strong>
         </h1>
 
-
         <p>
-
-            Anticiparte es una decisión inteligente.
-            Conoce las alternativas PABS y recibe
-            orientación personalizada para iniciar
-            tu proceso de afiliación.
-
+            Recibe orientación personalizada y comienza
+            tu proceso de afiliación PABS directamente
+            desde esta página.
         </p>
-
 
         <div class="hero-actions">
 
             <button
                 class="primary-button"
                 onclick="startAffiliation()">
-
                 QUIERO AFILIARME
-
             </button>
-
 
             <button
                 class="secondary-button"
                 onclick="openAssistant()">
-
-                HABLAR CON EL ASISTENTE
-
+                HABLAR CON EL ASESOR VIRTUAL
             </button>
 
         </div>
 
-
         <div class="hero-note">
-
-            ✓ Atención personalizada
+            ✓ Orientación personalizada
             &nbsp;&nbsp;
-            ✓ Orientación profesional
+            ✓ Proceso paso a paso
             &nbsp;&nbsp;
-            ✓ Proceso sencillo
-
+            ✓ Atención por WhatsApp
         </div>
-
 
     </div>
 
 </section>
 
 
-
-<!-- =========================
-     BENEFICIOS
-========================= -->
-
-<section
-    id="beneficios"
-    class="benefits-section">
-
+<section id="beneficios" class="benefits-section">
 
     <div class="section-heading">
 
-        <span>
-            CONOCE MÁS
-        </span>
+        <span>CONOCE MÁS</span>
 
-        <h2>
-            ¿Por qué afiliarte?
-        </h2>
+        <h2>Protege lo que más valoras.</h2>
 
         <p>
-
-            La previsión permite tomar decisiones
-            con anticipación y brindar mayor
-            tranquilidad a tu familia.
-
+            Conoce las alternativas disponibles y recibe
+            orientación antes de iniciar tu afiliación.
         </p>
 
     </div>
 
-
-
     <div class="benefits-grid">
 
-
         <article class="benefit-card">
+            <div class="benefit-icon">✓</div>
 
-            <div class="benefit-icon">
-                ✓
-            </div>
-
-            <h3>
-                Protección
-            </h3>
+            <h3>Protección</h3>
 
             <p>
-
-                Planea con anticipación y evita
-                dejar decisiones importantes
-                para momentos difíciles.
-
+                Anticipa decisiones importantes y brinda
+                mayor tranquilidad a tu familia.
             </p>
-
         </article>
-
-
 
         <article class="benefit-card">
+            <div class="benefit-icon">◆</div>
 
-            <div class="benefit-icon">
-                ◆
-            </div>
-
-            <h3>
-                Previsión
-            </h3>
+            <h3>Previsión</h3>
 
             <p>
-
-                Construye una alternativa de
-                protección mediante aportaciones
-                programadas.
-
+                Conoce alternativas de aportación
+                de acuerdo con tus posibilidades.
             </p>
-
         </article>
-
-
 
         <article class="benefit-card">
+            <div class="benefit-icon">★</div>
 
-            <div class="benefit-icon">
-                ★
-            </div>
-
-            <h3>
-                Tranquilidad
-            </h3>
+            <h3>Orientación</h3>
 
             <p>
-
-                Cuenta con orientación para
-                conocer tus opciones antes
-                de tomar una decisión.
-
+                Nuestro asistente virtual puede ayudarte
+                a resolver tus dudas durante el proceso.
             </p>
-
         </article>
-
 
     </div>
 
 </section>
 
 
-
-<!-- =========================
-     COMO FUNCIONA
-========================= -->
-
-<section
-    id="como-funciona"
-    class="process-section">
-
+<section id="como-funciona" class="process-section">
 
     <div class="section-heading">
 
-        <span>
-            PROCESO
-        </span>
+        <span>PROCESO DE AFILIACIÓN</span>
 
-        <h2>
-            Afiliarte es sencillo
-        </h2>
+        <h2>Te acompañamos paso a paso.</h2>
 
     </div>
 
-
     <div class="process-grid">
 
-
         <div class="process-step">
+            <div class="step-number">01</div>
 
-            <div class="step-number">
-                01
-            </div>
-
-            <h3>
-                Infórmate
-            </h3>
+            <h3>Conoce</h3>
 
             <p>
-                Resuelve tus dudas con
-                nuestro asistente virtual.
+                Pregunta al asistente virtual cualquier
+                duda que tengas.
             </p>
-
         </div>
 
-
-
         <div class="process-step">
+            <div class="step-number">02</div>
 
-            <div class="step-number">
-                02
-            </div>
-
-            <h3>
-                Registra tus datos
-            </h3>
+            <h3>Registra</h3>
 
             <p>
-                Completa la información necesaria
+                Proporciona los datos necesarios
                 para iniciar tu solicitud.
             </p>
-
         </div>
-
-
 
         <div class="process-step">
+            <div class="step-number">03</div>
 
-            <div class="step-number">
-                03
-            </div>
-
-            <h3>
-                Recibe orientación
-            </h3>
+            <h3>Confirma</h3>
 
             <p>
-                Un asesor podrá continuar
-                contigo el proceso.
+                Revisa tu información y confirma
+                antes de enviarla.
             </p>
-
         </div>
-
 
     </div>
 
 </section>
 
-
-
-<!-- =========================
-     CTA
-========================= -->
 
 <section class="cta-section">
 
     <div>
 
-        <span>
-            DA EL PRIMER PASO
-        </span>
+        <span>DA EL PRIMER PASO</span>
 
-        <h2>
-            Comienza tu proceso de afiliación
-        </h2>
+        <h2>Comienza tu proceso de afiliación.</h2>
 
         <p>
-            Nuestro asistente puede orientarte
-            antes de registrar tus datos.
+            Nuestro asesor virtual te acompañará durante
+            el proceso y resolverá tus dudas.
         </p>
-
 
         <button
             class="primary-button"
             onclick="startAffiliation()">
-
             INICIAR AFILIACIÓN
-
         </button>
 
     </div>
@@ -385,103 +221,60 @@
 </section>
 
 
-
-<!-- =========================
-     PREGUNTAS
-========================= -->
-
-<section
-    id="preguntas"
-    class="faq-section">
-
+<section id="preguntas" class="faq-section">
 
     <div class="section-heading">
 
-        <span>
-            INFORMACIÓN
-        </span>
+        <span>INFORMACIÓN</span>
 
-        <h2>
-            Preguntas frecuentes
-        </h2>
+        <h2>Preguntas frecuentes</h2>
 
     </div>
 
-
     <div class="faq-container">
 
-
         <details>
-
-            <summary>
-                ¿Qué es PABS?
-            </summary>
+            <summary>¿Qué es PABS?</summary>
 
             <p>
-
                 PABS es un programa de apoyo de beneficio
-                social orientado a la previsión y protección
-                familiar.
-
+                social enfocado en previsión y protección.
             </p>
-
         </details>
 
-
-
         <details>
-
             <summary>
-                ¿Cómo puedo iniciar mi afiliación?
+                ¿Puedo resolver mis dudas antes de afiliarme?
             </summary>
 
             <p>
-
-                Puedes iniciar proporcionando tus datos
-                mediante el formulario de afiliación.
-                Posteriormente un asesor podrá continuar
-                con tu atención.
-
+                Sí. El asesor virtual está diseñado para
+                orientarte antes y durante el proceso.
             </p>
-
         </details>
 
-
-
         <details>
-
             <summary>
-                ¿Cuánto puedo aportar?
+                ¿Qué aportación corresponde a cada frecuencia?
             </summary>
 
             <p>
-
-                El sistema mostrará automáticamente
-                la aportación correspondiente de acuerdo
-                con la frecuencia seleccionada.
-
+                Semanal: $150 MXN.<br>
+                Quincenal: $300 MXN.<br>
+                Mensual: $600 MXN.
             </p>
-
         </details>
-
 
     </div>
 
 </section>
 
 
-
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer class="footer">
 
     <div class="footer-brand">
 
-        <strong>
-            PABS
-        </strong>
+        <strong>PABS</strong>
 
         <span>
             Programa de Apoyo de Beneficio Social
@@ -489,120 +282,48 @@
 
     </div>
 
-
     <div class="footer-contact">
 
-        <strong>
-            Asesor Ejecutivo Comercial
-        </strong>
+        <strong>Asesor Ejecutivo Comercial</strong>
 
-        <span>
-            Sergio Estrada
-        </span>
+        <span>Sergio Estrada</span>
 
-        <span>
-            WhatsApp: 664 160 1608
-        </span>
+        <span>WhatsApp: 664 160 1608</span>
 
     </div>
 
-
     <div class="footer-copy">
-
-        © 2026 PABS.
-        Información sujeta a términos y condiciones aplicables.
-
+        © 2026 PABS. Información sujeta a términos
+        y condiciones aplicables.
     </div>
 
 </footer>
-
 
 
 <!-- =========================
      ASISTENTE VIRTUAL
 ========================= -->
 
-<div
-    id="assistant"
-    class="assistant">
-
+<div id="assistant" class="assistant">
 
     <div class="assistant-window">
-
 
         <div class="assistant-header">
 
             <div>
-
-                <strong>
-                    Asistente PABS
-                </strong>
+                <strong>Asesor Virtual PABS</strong>
 
                 <span>
-                    ● En línea
+                    ● Disponible
                 </span>
-
             </div>
 
-
-            <button
-                onclick="closeAssistant()">
-
-                ×
-
-            </button>
+            <button onclick="closeAssistant()">×</button>
 
         </div>
 
 
-
-        <div
-            id="chat"
-            class="chat">
-
-            <div class="bot-message">
-
-                Hola 👋
-
-                <br><br>
-
-                Soy tu asistente virtual PABS.
-
-                <br><br>
-
-                Puedo orientarte sobre el proceso
-                de afiliación y ayudarte a resolver
-                tus dudas.
-
-                <br><br>
-
-                ¿Qué deseas hacer?
-
-            </div>
-
-
-            <div class="assistant-options">
-
-                <button onclick="assistantChoice('afiliarme')">
-                    Quiero afiliarme
-                </button>
-
-                <button onclick="assistantChoice('informacion')">
-                    Quiero conocer PABS
-                </button>
-
-                <button onclick="assistantChoice('aportaciones')">
-                    Quiero saber las aportaciones
-                </button>
-
-                <button onclick="assistantChoice('asesor')">
-                    Quiero hablar con un asesor
-                </button>
-
-            </div>
-
-        </div>
-
+        <div id="chat" class="chat"></div>
 
 
         <div class="assistant-input">
@@ -610,46 +331,36 @@
             <input
                 id="userMessage"
                 type="text"
-                placeholder="Escribe tu pregunta...">
+                autocomplete="off"
+                placeholder="Escribe tu respuesta..."
+                onkeydown="handleEnter(event)"
+            >
 
-            <button
-                onclick="sendMessage()">
-
-                ➤
-
-            </button>
+            <button onclick="sendMessage()">➤</button>
 
         </div>
-
 
     </div>
 
 </div>
 
 
-
-<!-- BOTÓN FLOTANTE -->
-
 <button
     id="assistantButton"
     class="assistant-button"
     onclick="openAssistant()">
 
-    <span>
-        ✦
-    </span>
+    <span>✦</span>
 
     <small>
-        ¿Necesitas ayuda?
+        ¿Quieres afiliarte?
     </small>
 
 </button>
 
 
-
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
+```
