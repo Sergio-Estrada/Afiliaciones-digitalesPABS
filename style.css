@@ -1,3 +1,17 @@
+/* Asegura que el contenedor tenga fondo oscuro si la barra es clara */
+header, .navbar {
+  background-color: #1a237e; /* Azul oscuro o el color institucional de tu página */
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Controla el tamaño y proporciones de la imagen */
+.logo-header {
+  height: 50px;       /* Ajusta la altura deseada según el diseño */
+  width: auto;        /* Mantiene la proporción original */
+  display: block;
+}
 /* Configuración básica de letras y márgenes */
 * {
   margin: 0;
