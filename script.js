@@ -122,28 +122,3 @@ fetch('AQUÍ_PEGA_TU_URL_DE_APPS_SCRIPT', {
   alert('¡Gracias por registrarte!');
 })
 .catch(error => console.error('Error:', error));
-function doPost(e) {
-  try {
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Hoja 1");
-    
-    // Si los datos se envían como JSON
-    var data = JSON.parse(e.postData.contents);
-    
-    // Si los datos se envían como URLSearchParams / FormData, usa: e.parameter.nombre
-    var nombre = data.nombre || e.parameter.nombre || "";
-    var telefono = data.telefono || e.parameter.telefono || "";
-    var correo = data.correo || e.parameter.correo || "";
-    var estado = data.estado || e.parameter.estado || "Pendiente";
-    var fecha = new Date();
-
-    sheet.appendRow([fecha, nombre, telefono, correo, estado]);
-
-    return ContentService
-      .createTextOutput(JSON.stringify({ result: "success" }))
-      .setMimeType(ContentService.MimeType.JSON);
-  } catch (err) {
-    return ContentService
-      .createTextOutput(JSON.stringify({ result: "error", message: err.toString() }))
-      .setMimeType(ContentService.MimeType.JSON);
-  }
-}
