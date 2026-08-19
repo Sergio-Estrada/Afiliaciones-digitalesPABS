@@ -10,11 +10,11 @@ fetch('https://script.google.com/macros/s/AKfycbwwavpbXN_B7WeL8sScINI9ctXYnYtrw8
   headers: {
     'Content-Type': 'application/json',
   },
-  body: JSON.stringify(formData)
+  body: URLSerchParams(no-cors)
 })
 .then(response => alert('Registro completado con éxito'))
 .catch(error => console.error('Error:', error));
-function doPost(e) {
+function e.parameter {
   try {
     var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     var data = JSON.parse(e.postData.contents);
@@ -41,8 +41,8 @@ function doPost(e) {
 
 function enviarNotificacionWhatsApp(nombre, telefono, correo) {
   // ⚙️ CONFIGURACIÓN DE CALLMEBOT
-  var miTelefono = "+526641601608"; // Ejemplo México: 5216641234567 (código 52 + 1 + 10 dígitos)
-  var apiKey = "3889415";    // Pega aquí la API Key que te dio CallMeBot
+  var miTelefono = //"+526641601608";
+  var apiKey = //"3889415";    
 
   var textoMensaje = "🚨 *¡Nueva Afiliación Registrada!*\n\n" +
                      "👤 *Nombre:* " + nombre + "\n" +
