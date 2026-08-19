@@ -103,3 +103,22 @@ function doPost(e) {
   // 4. Decimos "¡Listo, gracias!"
   return ContentService.createTextOutput("Registrado con éxito");
 }
+// Cuando llenen el formulario:
+const datos = new URLSearchParams();
+datos.append('nombre', document.getElementById('nombre').value);
+datos.append('telefono', document.getElementById('telefono').value);
+datos.append('correo', document.getElementById('correo').value);
+
+// Enviamos el mensaje a la dirección del robot
+fetch('AQUÍ_PEGA_TU_URL_DE_APPS_SCRIPT', {
+  method: 'POST',
+  mode: 'no-cors', // Para que el navegador no lo bloquee
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded'
+  },
+  body: datos
+})
+.then(() => {
+  alert('¡Gracias por registrarte!');
+})
+.catch(error => console.error('Error:', error));
