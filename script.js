@@ -122,3 +122,16 @@ fetch('AQUÍ_PEGA_TU_URL_DE_APPS_SCRIPT', {
   alert('¡Gracias por registrarte!');
 })
 .catch(error => console.error('Error:', error));
+const datosAEnviar = {
+  nombre: document.getElementById("campoNombre").value,
+  telefonoLlamadas: document.getElementById("campoTelefono").value, // Teléfono normal
+  whatsapp: document.getElementById("campoWhatsapp").value,         // Teléfono WhatsApp
+  correo: document.getElementById("campoCorreo").value
+};
+
+fetch("TU_URL_DE_APPS_SCRIPT", {
+  method: "POST",
+  mode: "no-cors",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(datosAEnviar)
+});
