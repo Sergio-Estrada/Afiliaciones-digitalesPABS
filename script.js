@@ -110,7 +110,7 @@ datos.append('telefono', document.getElementById('telefono').value);
 datos.append('correo', document.getElementById('correo').value);
 
 // Enviamos el mensaje a la dirección del robot
-fetch('AQUÍ_PEGA_TU_URL_DE_APPS_SCRIPT', {
+fetch('https://script.google.com/macros/s/AKfycbwwavpbXN_B7WeL8sScINI9ctXYnYtrw8NsntDYDXhAEuTDb1QHmCjwb-dkywNsUn86Qg/exec', {
   method: 'POST',
   mode: 'no-cors', // Para que el navegador no lo bloquee
   headers: {
@@ -129,7 +129,7 @@ const datosAEnviar = {
   correo: document.getElementById("campoCorreo").value
 };
 
-fetch("TU_URL_DE_APPS_SCRIPT", {
+fetch("https://script.google.com/macros/s/AKfycbwwavpbXN_B7WeL8sScINI9ctXYnYtrw8NsntDYDXhAEuTDb1QHmCjwb-dkywNsUn86Qg/exec", {
   method: "POST",
   mode: "no-cors",
   headers: { "Content-Type": "application/json" },
