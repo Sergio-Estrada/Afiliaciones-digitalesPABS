@@ -4,7 +4,7 @@ const formData = {
   correo: document.getElementById('correo').value
 };
 
-fetch('https://script.google.com/macros/s/AKfycbwwavpbXN_B7WeL8sScINI9ctXYnYtrw8NsntDYDXhAEuTDb1QHmCjwb-dkywNsUn86Qg/exec', {
+fetch('https://script.google.com/macros/s/AKfycbzVrtnsyZ0uP3jRqQjS7fDOZ1g5aaYC9V5aESV9QnvRoX3vahoWrbyNZqAHRtADqfQQCw/exec', {
   method: 'POST',
   mode: 'no-cors',
   headers: {
@@ -41,8 +41,8 @@ function e.parameter {
 
 function enviarNotificacionWhatsApp(nombre, telefono, correo) {
   // ⚙️ CONFIGURACIÓN DE CALLMEBOT
-  var miTelefono = //"+526641601608";
-  var apiKey = //"3889415";    
+  var miTelefono = "+526641601608";
+  var apiKey = "3889415";    
 
   var textoMensaje = "🚨 *¡Nueva Afiliación Registrada!*\n\n" +
                      "👤 *Nombre:* " + nombre + "\n" +
