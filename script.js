@@ -87,3 +87,19 @@ function registrarAfiliacion(event) {
     alert("Ocurrió un error al enviar el registro.");
   });
 }
+function doPost(e) {
+  // 1. Abrimos el cuaderno
+  var hoja = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  
+  // 2. Leemos la carta que llegó
+  var nombre = e.parameter.nombre;
+  var telefono = e.parameter.telefono;
+  var correo = e.parameter.correo;
+  var estado = "Nuevo Lead"; // Le ponemos una etiqueta automática
+  
+  // 3. Escribimos los datos en un renglón nuevo
+  hoja.appendRow([new Date(), nombre, telefono, correo, estado]);
+  
+  // 4. Decimos "¡Listo, gracias!"
+  return ContentService.createTextOutput("Registrado con éxito");
+}
