@@ -256,7 +256,55 @@
             </div>
         </div>
     </section>
+ <!-- Formulario de Afiliación Digital NATIVO -->
+    <section id="afiliacion" class="py-20 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden">
+                
+                <div class="bg-pabs-navy text-white p-8 sm:p-10 text-center relative border-b-4 border-pabs-gold">
+                    <div class="flex justify-center mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-pabs-gold flex items-center justify-center text-white text-2xl font-bold shadow-md">
+                            P
+                        </div>
+                    </div>
+                    <span class="text-pabs-gold text-xs font-bold uppercase tracking-widest block">Programa de Apoyo de Beneficio Social</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">Formulario Oficial de Afiliación Digital</h2>
+                    <p class="text-slate-300 text-sm mt-2 max-w-lg mx-auto font-light">Completa los campos básicos para solicitar tu contrato e imprimir tu comprobante de registro oficial.</p>
+                </div>
 
+                <form id="affiliationForm" class="p-6 sm:p-10 space-y-8" onsubmit="handleFormSubmit(event)">
+                    
+                    <!-- PASO 1: Plan -->
+                    <div>
+                        <h3 class="text-base font-bold text-pabs-navy border-b border-slate-200 pb-2 mb-4 flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-full bg-pabs-navy text-white text-xs flex items-center justify-center">1</span>
+                            Selecciona el Plan Funerario (Cláusula 3ra del Contrato)
+                        </h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <label class="plan-card border-2 border-slate-200 rounded-2xl p-4 cursor-pointer hover:border-slate-300 transition-all flex items-center justify-between" id="card-imperial">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="plan" value="Plan Imperial" data-price="28900" class="w-5 h-5 text-pabs-gold focus:ring-pabs-gold" onchange="updatePlanSelection('imperial', 28900)">
+                                    <div>
+                                        <p class="font-bold text-pabs-navy text-sm">Plan Imperial</p>
+                                        <p class="text-xs text-slate-500">$28,900 MXN Total</p>
+                                    </div>
+                                </div>
+                                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-1 rounded">EFO1</span>
+                            </label>
+
+                            <label class="plan-card border-2 border-slate-200 rounded-2xl p-4 cursor-pointer hover:border-slate-300 transition-all flex items-center justify-between selected" id="card-premium">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="plan" value="Plan Premium" data-price="32900" class="w-5 h-5 text-pabs-gold focus:ring-pabs-gold" checked onchange="updatePlanSelection('premium', 32900)">
+                                    <div>
+                                        <p class="font-bold text-pabs-navy text-sm">Plan Premium</p>
+                                        <p class="text-xs text-slate-500">$32,900 MXN Total</p>
+                                    </div>
+                                </div>
+                                <span class="text-[10px] font-bold bg-amber-100 text-amber-800 px-2 py-1 rounded">EFO2</span>
+                            </label>
+                        </div>
+                    </div>
    <!-- FORMULARIO VISIBLE PARA EL CLIENTE -->
 <div style="max-width: 400px; margin: 20px auto; font-family: Arial, sans-serif; border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
   <h2>¡Afíliate con nosotros! 📝</h2>
@@ -284,7 +332,7 @@
 <script>
 function enviarAlCRM() {
   // ⚠️ REEMPLAZA ESTA DIRECCIÓN POR LA QUE COPIASTE EN EL PASO 2
-  const urlGoogleScript = "https://docs.google.com/spreadsheets/d/10zXPxBprIIeWBvaNEnDTO34ZIjWz3GxCKZc8VSnF4WU/edit?gid=0#gid=0";
+  const urlGoogleScript = "https://script.google.com/macros/s/AKfycbwwhKFlClSD-TrhjbdAEkd4DIcqYIciO1lAlo161R9j1xWibvRJQgndxJSDxOIz1Zqliw/exec";
 
   const mensaje = document.getElementById("mensajeEstado");
   mensaje.style.color = "blue";
